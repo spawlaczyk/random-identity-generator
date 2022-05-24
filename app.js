@@ -29,6 +29,14 @@ const lastNames = [
   'Williams'
 ];
 
+const phone = [
+  '123456789',
+  '987654321',
+  '112233445',
+  '998877665',
+  '000000000',
+];
+
 const people = [
 
 ];
@@ -47,6 +55,8 @@ for(let i = 0; i < 21; i++){
   }
   obj.lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
   obj.age = [Math.floor(Math.random() * (78 - 18)) + 18];
+  obj.phoneNumber = randChoice(phone);
+  obj.email = obj.firstName.toLowerCase() + '.' + obj.lastName.toLowerCase() + '@gmail.com';
   people.push(obj);
 };
 
